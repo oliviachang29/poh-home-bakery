@@ -11,9 +11,9 @@ const Menu = ({ title, infoText, items }) => {
         	<div key={i} className={classNames("col-md-6", styles.container)}>
         		<div className={styles.name_n_price}>
         			<h5 className={styles.name}>{item.name}</h5>
+              <p className={styles.price}>{item.price}</p>
         		</div>
         		<p className={styles.description}>{item.description}</p>
-            <p className={styles.price}>{item.price}</p>
     	    </div>
     	  ))}
       </div>

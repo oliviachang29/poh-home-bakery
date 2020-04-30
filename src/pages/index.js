@@ -39,7 +39,7 @@ const BlogIndex = ({ data, location }) => {
         backgroundTextSize="45vw">
         <Menu
           items={cakes}
-          infoText="All cakes approximately 7.5 x 7.5 x 2.5 inches and 1 to 1.3 kg"/>
+          infoText="All cakes approximately 7.5 x 7.5 x 2.5 inches and 1 to 1.3 kg."/>
       </Section>
       <Section
         title="Cookies"
