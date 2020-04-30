@@ -2,7 +2,9 @@
 
 .navbar {
 	height: 60px;
+	padding-top: 10px;
 	margin-bottom: -60px;
+	z-index: 1;
 }
 
 .navbar-brand {
@@ -11,6 +13,12 @@
 
 .nav-link {
 	color: white !important;
+	@include smooth-transition;
+	padding: 10px;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-bottom: 1px solid white;
+	}
 }
 
 .hidden-md {
@@ -29,5 +37,16 @@
 	@media (max-width: $sm) {
 		width: 100%;
 		text-align: center;
+	}
+}
+
+.call-btn {
+	margin-left: 10px;
+	border: 1px solid white;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+	&:hover {
+		color: black !important;
+		background-color: white;
 	}
 }

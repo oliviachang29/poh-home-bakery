@@ -38,9 +38,9 @@
 
 .backgroundText {
     font-family: $cursive-font;
-    margin-left: -10px;
+    font-style: italic;
+    margin-left: -5vw;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    line-height: 62.5%;
+    bottom: 0;
 }

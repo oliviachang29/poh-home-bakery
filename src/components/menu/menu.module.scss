@@ -15,8 +15,10 @@
 }
 
 .name, .price {
-	display: inline;
-	vertical-align: bottom;
+	@media (min-width: $lg) {
+		display: inline;
+		vertical-align: bottom;
+	}
 }
 
 .name {

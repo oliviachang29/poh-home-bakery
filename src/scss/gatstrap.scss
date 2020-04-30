@@ -39,8 +39,8 @@ $enable-print-styles: true !default;
 $container-max-widths: (
   sm: 540px,
   md: 640px,
-  lg: 710px,
-  xl: 780px,
+  lg: 760px,
+  xl: 850px,
 ) !default;
 
 // Body
@@ -87,4 +87,12 @@ body {
 
 a {
   color: inherit !important;
+}
+
+.section404 {
+  padding-top: 40px;
+}
+
+.button404 {
+  margin-top: 50px;
 }

@@ -3,9 +3,9 @@ import React from 'react'
 import get from 'lodash/get'
 import classNames from 'classnames'
 
-import Post from 'templates/post'
 import Meta from 'components/meta'
 import Layout from 'components/layout'
+
 // page sections
 import Hero from 'components/hero'
 import Section from 'components/section'
@@ -13,14 +13,12 @@ import HowItWorks from 'components/how-it-works'
 import Menu from 'components/menu'
 import About from 'components/about'
 
+// menu sources - delete once you set up sheets
 import cakes from '../source/cakes.json'
 import cookies from '../source/cookies.json'
 import muffins from '../source/muffins-and-buns.json'
 
-// console.log(cakes)
-// console.log(cookies)
-
-const BlogIndex = ({ data, location }) => {
+const Index = ({ data, location }) => {
   return (
     <Layout location={location}>
       <Hero text={get(data, 'site.meta.description')}/>
@@ -68,7 +66,7 @@ const BlogIndex = ({ data, location }) => {
   )
 }
 
-export default BlogIndex
+export default Index
 
 export const pageQuery = graphql`
   query IndexQuery {

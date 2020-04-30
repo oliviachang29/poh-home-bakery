@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import './style.scss'
+import './navi.scss'
+import classNames from 'classnames'
 
 class Navi extends React.Component {
   render() {
-    const { location, title } = this.props
+    const { location, title, navClass } = this.props
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark flex-column flex-sm-row">
+      <nav className={classNames("navbar navbar-expand-sm navbar-dark flex-column flex-sm-row", navClass)}>
         <div className="container-fluid">
           <Link className="text-center" to="/">
             <h1 className="navbar-brand mb-0">{title}</h1>
@@ -19,7 +20,7 @@ class Navi extends React.Component {
               <a href="#menu" className="nav-link">Menu</a>
             </li>
             <li className='nav-item hidden-sm'>
-              <div className="nav-link">Call: <a href="tel:60194973778">60194973778</a></div>
+              <a href="tel:60194973778" className="nav-link call-btn">Call</a>
             </li>
           </ul>
         </div>
