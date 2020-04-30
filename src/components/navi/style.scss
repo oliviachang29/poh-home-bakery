@@ -1,0 +1,33 @@
+@import "scss/variables.scss";
+
+.navbar {
+	height: 60px;
+	margin-bottom: -60px;
+}
+
+.navbar-brand {
+	color: white !important;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.hidden-md {
+	@media (max-width: $md) {
+		display: none !important;
+	}
+}
+
+.hidden-sm {
+	@media (max-width: $sm) {
+		display: none !important;
+	}
+}
+
+.text-center {
+	@media (max-width: $sm) {
+		width: 100%;
+		text-align: center;
+	}
+}

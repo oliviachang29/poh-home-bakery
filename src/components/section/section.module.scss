@@ -1,0 +1,45 @@
+@import 'scss/colors.scss';
+@import 'scss/variables.scss';
+
+.section {
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	@media (min-width: $lg) {
+		text-align: left;
+	}
+}
+
+.innerContainer {
+	padding: 80px 30px;
+	margin: 0 auto;
+}
+
+.beige {
+	color: $beige;
+}
+
+.beigeBg {
+	background-color: $beige;
+}
+
+.white {
+	color: #fff;
+}
+
+.whiteBg {
+	background-color: #fff
+}
+
+.title {
+	margin-bottom: 25px;
+}
+
+.backgroundText {
+    font-family: HarrietDisplay-BoldItalic;
+    margin-left: -10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

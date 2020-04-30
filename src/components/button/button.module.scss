@@ -1,0 +1,24 @@
+@import "scss/variables.scss";
+
+.container {
+	margin-top: 20px;
+}
+
+.text {
+	@include smooth-transition;
+	border: 1px solid black;
+	text-align: center;
+	color: black;
+	padding: 15px 30px;
+	font-size: 18px;
+	width: 50%;
+	margin: 0 auto;
+	text-decoration: none !important;
+	@media (min-width: $lg) {
+		width: 100%;
+	}
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}

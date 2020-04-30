@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Chocolate Cake",
+    "description": "Our most popular cake. Delicious moist chocolate cake with choice of plain or mint-flavored chocolate icing.",
+    "price": "RM 34"
+  },
+  {
+    "name": "Plain Butter Cake",
+    "description": "Classic butter cake.",
+    "price": "RM 27"
+  },
+  {
+    "name": "Marble Cake",
+    "description": "Vanilla and chocolate swirl cake.",
+    "price": "RM 28"
+  },
+  {
+    "name": "Orange Cake",
+    "description": "Made with fresh orange zest and juice.",
+    "price": "RM 29"
+  },
+  {
+    "name": "Banana Cake",
+    "description": "Perfect balance of fresh banana flavor.",
+    "price": "RM 29"
+  },
+  {
+    "name": "Pineapple Upside Down Cake",
+    "description": "Good old-fashioned upside down cake.",
+    "price": "RM 29"
+  },
+  {
+    "name": "Coffee Walnut Cake",
+    "description": "Topped with walnuts.",
+    "price": "RM 34"
+  },
+  {
+    "name": "White Chocolate Lemon Cake",
+    "description": "With lemon icing.",
+    "price": "RM 34"
+  },
+  {
+    "name": "Cotton Cheesecake (900 g) Cake",
+    "description": "Choice of lemon or orange.",
+    "price": "RM 37"
+  },
+  {
+    "name": "Devonshire Coffee Coconut Cake",
+    "description": "Coffee flavoured cake with coconut flakes and chocolate chips. Topped with chocolate icing.",
+    "price": "RM 38"
+  },
+  {
+    "name": "Prune Chocolate Cake",
+    "description": "Healthy and delicious.",
+    "price": "RM 39"
+  },
+  {
+    "name": "Carrot Walnut Cake",
+    "description": "With raisins.",
+    "price": "RM 38"
+  },
+  {
+    "name": "Sugee Almond Cake",
+    "description": "Classic Malaysian festival semolina butter cake.",
+    "price": "RM 39"
+  },
+  {
+    "name": "Longan Fruit Cake (700 g)",
+    "description": "Moist and delicious with dried longan, golden raisin, and walnuts.",
+    "price": "RM 35"
+  }
+]

@@ -1,0 +1,30 @@
+@import "scss/variables.scss";
+
+.hero {
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background-image: url('./hero.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.text {
+	opacity: 0.92;
+	font-family: HarrietDisplay-BoldItalic;
+	color: #FFFFFF;
+	letter-spacing: 0;
+	text-align: center;
+	text-shadow: 0 11px 49px rgba(0,0,0,0.50);
+
+	font-size: 30px;
+	line-height: 45px;
+
+	@media (min-width: $md) {
+		font-size: 5vw;
+		line-height: 6vw;
+	}
+}
