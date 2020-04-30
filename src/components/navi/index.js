@@ -13,13 +13,13 @@ class Navi extends React.Component {
           </Link>
           <ul className="navbar-nav ml-auto">
             <li className='nav-item hidden-md'>
-              <Link to="#order" className="nav-link">Order</Link>
+              <a href="#order" className="nav-link">Order</a>
             </li>
             <li className='nav-item hidden-md'>
-              <Link to="#menu" className="nav-link">Menu</Link>
+              <a href="#menu" className="nav-link">Menu</a>
             </li>
             <li className='nav-item hidden-sm'>
-              <div className="nav-link">Call: <Link to="tel:60194973778">60194973778</Link></div>
+              <div className="nav-link">Call: <a href="tel:60194973778">60194973778</a></div>
             </li>
           </ul>
         </div>
