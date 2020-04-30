@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-bootstrap",
-  "description": "Simple starter for Gatsby",
-  "version": "2.0.1",
-  "author": "Futoshi Iwashita <jaxx2104@gmail.com>",
+  "name": "Poh Home Bakery",
+  "description": "Bakery website",
+  "version": "0.1.0",
+  "author": "Olivia Chang <hello@oliviachang.me>",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "2.19.23",
@@ -60,11 +60,9 @@
     "textlint-rule-preset-japanese": "4.0.4"
   },
   "keywords": [
-    "gatsby",
-    "gatstrap",
-    "starter"
+    "gatsby"
   ],
-  "license": "MIT",
+  "license": "UNLICENSED",
   "lint-staged": {
     "*.{js,json,md}": [
       "prettier --write",

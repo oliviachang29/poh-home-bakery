@@ -1,10 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Mrs. Poh's Home Bakery",
-    description: 'Gatsby starter for bootstrap a blog',
-    siteUrl: 'https://gatstrap.netlify.com',
-    author: 'jaxx2104',
-    twitter: 'jaxx2104',
+    description: 'Delicious pastries from a home bakery in Penang.',
+    siteUrl: 'https://pohbakery.netlify.app',
     adsense: '',
   },
   pathPrefix: '/',
@@ -50,10 +48,10 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Gatstrap',
-        short_name: 'Gatstrap',
-        description: 'Gatsby starter for bootstrap a blog',
-        homepage_url: 'https://gatstrap.netlify.com',
+        name: 'Mrs. Poh Home Bakery',
+        short_name: 'Poh Bakery',
+        description: 'Delicious pastries from a home bakery in Penang.',
+        homepage_url: 'https://pohbakery.netlify.app',
         start_url: '/',
         background_color: '#fff',
         theme_color: '#673ab7',

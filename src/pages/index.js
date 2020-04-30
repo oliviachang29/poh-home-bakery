@@ -23,7 +23,7 @@ import muffins from '../source/muffins-and-buns.json'
 const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location}>
-      <Hero text="Delicious pastries from a home bakery."/>
+      <Hero text={get(data, 'site.meta.description')}/>
       <Section
         id="order"
         title="Place An Order"
@@ -77,8 +77,6 @@ export const pageQuery = graphql`
         title
         description
         url: siteUrl
-        author
-        twitter
         adsense
       }
     }
