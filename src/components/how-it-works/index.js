@@ -4,7 +4,7 @@ import styles from './how-it-works.module.scss'
 import Button from 'components/button'
 
 const HowItWorks = ({ }) => (
-	<div className="row">
+	<div className={classNames("row", styles.row)}>
 		<div className={classNames("col-lg-4", styles.container)}>
 			<div>
 				<h3>1. Browse Menu</h3>

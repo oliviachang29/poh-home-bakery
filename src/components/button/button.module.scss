@@ -11,8 +11,11 @@
 	color: black;
 	padding: 15px 30px;
 	font-size: 18px;
-	width: 50%;
+	width: 75%;
 	margin: 0 auto;
+	@media (min-width: $sm) {
+		width: 50%;
+	}
 	@media (min-width: $lg) {
 		width: 100%;
 	}

@@ -1,14 +1,18 @@
 @import "scss/variables.scss";
 
-.container {
+.row {
 	margin-bottom: 30px;
+}
+
+.container {
+	margin-bottom: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	margin-bottom: 40px;
 	text-align: center;
 	@media (min-width: $lg) {
-		min-height: 240px;
+		min-height: 200px;
 		margin-bottom: 0;
 		text-align: left;
 	}
