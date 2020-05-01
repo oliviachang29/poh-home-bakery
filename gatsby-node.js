@@ -1,6 +1,5 @@
 const each = require('lodash/each')
 const path = require('path')
-const PostTemplate = path.resolve('./src/templates/index.js')
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
