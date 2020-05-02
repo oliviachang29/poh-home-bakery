@@ -10,10 +10,10 @@ const Menu = ({ title, infoText, items }) => {
         {items.map(( item , i) => (
         	<div key={i} className={classNames("col-md-6", styles.container)}>
         		<div className={styles.name_n_price}>
-        			<h5 className={styles.name}>{item.name}</h5>
-              <p className={styles.price}>{item.price}</p>
+        			<h5 className={styles.name}>{item.node.name}</h5>
+              <p className={styles.price}>{item.node.price}</p>
         		</div>
-        		<p className={styles.description}>{item.description}</p>
+        		<p className={styles.description}>{item.node.description}</p>
     	    </div>
     	  ))}
       </div>
