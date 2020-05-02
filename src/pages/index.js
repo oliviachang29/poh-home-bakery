@@ -1,7 +1,10 @@
 import { graphql } from 'gatsby'
-import React from 'react'
-import get from 'lodash/get'
+import React, { Component } from 'react'
 import classNames from 'classnames'
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 import Meta from 'components/meta'
 import Layout from 'components/layout'
@@ -13,53 +16,128 @@ import HowItWorks from 'components/how-it-works'
 import Menu from 'components/menu'
 import About from 'components/about'
 
-const Index = ({ data, location }) => {
-  return (
-    <Layout location={location}>
-      <Hero text={get(data, 'site.meta.description')}/>
-      <Section
-        id="order"
-        title="Place An Order"
-        bg="white">
-        <HowItWorks />
-      </Section>
-      <Section
-        title="Cakes"
-        id="menu"
-        bg="beige"
-        backgroundText="cakes"
-        backgroundTextColor="white"
-        backgroundTextSize="45vw">
-        <Menu
-          items={get(data, 'allGoogleSpreadsheetDataSheetCakes.edges')}
-          infoText="All cakes approximately 7.5 x 7.5 x 2.5 inches and 1 to 1.3 kg."/>
-      </Section>
-      <Section
-        title="Cookies"
-        bg="white"
-        backgroundText="cookies"
-        backgroundTextColor="beige"
-        backgroundTextSize="33vw">
-        <Menu
-          items={get(data, 'allGoogleSpreadsheetDataSheetCookies.edges')}
-          infoText="All cookies in packs of 65-75 pieces."/>
-      </Section>
-      <Section
-        title="Muffins"
-        bg="beige"
-        backgroundText="muffins"
-        backgroundTextColor="white"
-        backgroundTextSize="30vw">
-        <Menu
-          items={get(data, 'allGoogleSpreadsheetDataSheetMuffins.edges')} />
-      </Section>
-      <Section
-        bg="white">
-        <About />
-      </Section>
-      <Meta site={get(data, 'site.meta')} />
-    </Layout>
-  )
+class Index extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      cakes: [], 
+      cookies: [],
+      muffins: []
+    }
+  }
+
+  syncFromGSheets() {
+    var spreadsheet_id = process.env.SPREADSHEET_ID
+    var api_key = process.env.API_KEY
+    var includeGridData = "true"
+    var fields = "sheets.data.rowData.values.userEnteredValue"
+
+    var url = ("https://sheets.googleapis.com/v4/spreadsheets/" + spreadsheet_id + 
+      "?key=" + api_key + 
+      "&includeGridData=" + includeGridData + 
+      "&fields=" + fields)
+
+    fetch(url)
+    .then((response) => response.json())
+    .then((responseJson) => {
+      this.setState({
+        cakes: this.parseSheets(responseJson, 1),
+        cookies: this.parseSheets(responseJson, 2),
+        muffins: this.parseSheets(responseJson, 3)
+      })
+
+    })
+    .catch((err) => {
+      console.log(err.message)
+    })
+  }
+
+  parseSheets(responseJson, sheetNum) {
+    // get rawData
+    var rawData = responseJson['sheets'][sheetNum]['data'][0]['rowData']
+    var data = []
+    // assign headers using first row
+    var first_row = rawData[0]['values']
+    var headers = []
+    for(var i = 0; i < first_row.length; i++) {
+      headers[i] = first_row[i]['userEnteredValue']['stringValue']
+    }
+    // go through rows
+    for (var i = 1; i < rawData.length; i++) { // skip first row (headers)
+      var row = rawData[i]['values']
+      var temp = {}
+      // go through columns
+      for (var k = 0; k < headers.length; k++) {
+        var cellValue = row[k]['userEnteredValue']['stringValue']   
+        // try assigning it to a number
+        if (!cellValue) {
+          cellValue = row[k]['userEnteredValue']['numberValue']
+        }
+        // not a number, so a boolean
+        if (!cellValue & cellValue !== 0) {
+          cellValue = row[k]['userEnteredValue']['boolValue']
+        }
+        temp[headers[k]] = cellValue
+      }
+
+      data.push(temp)
+    }
+    return data
+  }
+
+  componentDidMount() {
+    this.syncFromGSheets()
+  }
+
+  render() {
+    return (
+      <Layout location={location}>
+        <Hero text={this.props.data.site.meta.description}/>
+        <Section
+          id="order"
+          title="Place An Order"
+          bg="white">
+          <HowItWorks />
+        </Section>
+        <Section
+          title="Cakes"
+          id="menu"
+          bg="beige"
+          backgroundText="cakes"
+          backgroundTextColor="white"
+          backgroundTextSize="45vw">
+          <Menu
+            items={this.state.cakes}
+            infoText="All cakes approximately 7.5 x 7.5 x 2.5 inches and 1 to 1.3 kg."/>
+        </Section>
+        <Section
+          title="Cookies"
+          bg="white"
+          backgroundText="cookies"
+          backgroundTextColor="beige"
+          backgroundTextSize="33vw">
+          <Menu
+            items={this.state.cookies}
+            infoText="All cookies in packs of 65-75 pieces."/>
+        </Section>
+        <Section
+          title="Muffins"
+          bg="beige"
+          backgroundText="muffins"
+          backgroundTextColor="white"
+          backgroundTextSize="30vw">
+          <Menu
+            items={this.state.muffins} />
+        </Section>
+        <Section
+          bg="white">
+          <About />
+        </Section>
+        <Meta site={this.props.data.site.meta} />
+      </Layout>
+    )
+  }
 }
 
 export default Index
@@ -72,33 +150,6 @@ export const pageQuery = graphql`
         description
         url: siteUrl
         adsense
-      }
-    }
-    allGoogleSpreadsheetDataSheetCakes {
-      edges {
-        node {
-          name
-          description
-          price
-        }
-      }
-    }
-    allGoogleSpreadsheetDataSheetCookies {
-      edges {
-        node {
-          name
-          description
-          price
-        }
-      }
-    }
-    allGoogleSpreadsheetDataSheetMuffins {
-      edges {
-        node {
-          name
-          description
-          price
-        }
       }
     }
   }

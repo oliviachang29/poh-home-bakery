@@ -1,0 +1,776 @@
+{
+  "sheets": [
+    {
+      "data": [
+        {
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Mrs. Poh's Home Bakery"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "https://pohbakery.netlify.app/"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "In this spreadsheet, you can edit the names, descripions, and prices of menu items. The site will automatically update when you make changes!"
+                  }
+                },
+                {
+                  "userEnteredValue": {}
+                }
+              ]
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "⬇️⬇️⬇️⬇️Click the buttons below to change to a different sheet ⬇️Click the buttons below to change to a different sheet ⬇️⬇️⬇️⬇️"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "name"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "price"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Chocolate"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Our most popular cake. Delicious moist chocolate cake with choice of plain or mint-flavored chocolate icing."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 34"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Plain Butter"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Classic butter cake."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 27"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Marble"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Vanilla and chocolate swirl cake."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 28"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Orange"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Made with fresh orange zest and juice."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 29"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Banana"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Perfect balance of fresh banana flavor."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 29"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Pineapple Upside Down"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Good old-fashioned upside down cake."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 29"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Coffee Walnut"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Topped with walnuts."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 34"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "White Chocolate Lemon"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "With lemon icing."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 34"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cotton Cheesecake (900 g)"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Choice of lemon or orange."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 37"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Devonshire Coffee Coconut"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Coffee flavoured cake with coconut flakes and chocolate chips. Topped with chocolate icing."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 38"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Prune Chocolate"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Healthy and delicious."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 39"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Carrot Walnut"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "With raisins."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 38"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Sugee Almond"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Classic Malaysian festival semolina butter cake."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 39"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Longan Fruit Cake (700 g)"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Moist and delicious with dried longan, golden raisin, and walnuts."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 35"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "name"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "price"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Butter Cookies"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "~360 gm"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 23"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cornflakes Cookies"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "~360 gm"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 25"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Walnut Chocolate Chip Cookies"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "With oats and nestum. ~360 gm."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 27"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Almond Cookies"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "~400 gm"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 26"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Pineapple Rolls"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "~500 gm"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 31"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Almond Crisp"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Crispy, healthy snacks. ~300 gm"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 30"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "name"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "price"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Chocolate Chip and Banana Muffins"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Tender and moist."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 2.50/muffin; RM 23/dozen"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Double Chocolate Muffins"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Delicious and decadent."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 2.50/muffin; RM 23/dozen"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Walnut Cinnamon Loaf"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Made with wholemeal flour. ~500g."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 26"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Scallion Garlic Cheese Buns"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Deliciously cheesy garlic buns."
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "RM 24"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "data": [
+        {
+          "rowData": [
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "id"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Label"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Text"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "cake_description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cake description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "All cakes approximately 7.5 x 7.5 x 2.5 inches and 1 to 1.3 kg"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "cookies_description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cookies description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "All cookies in packs of 65-75 pieces"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "cell_number"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Cell Phone Number"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "numberValue": 60194973778
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "home_phone_number"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Home Phone Number"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "04-226-0807"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "address"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Address"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "28 Western Gardens, 10450 Penang, Malaysia"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "about_text"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "About Text"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "As a teacher, Mrs. Poh began baking cakes for her students as motivation for her class to win awards. Now, 40 years later, she's still baking delicious cakes for friends, family, and anyone who wants them!"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "google_maps"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Google Maps Link"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "https://goo.gl/maps/N6DGEF2wRR52"
+                  }
+                }
+              ]
+            },
+            {
+              "values": [
+                {
+                  "userEnteredValue": {
+                    "stringValue": "hero_text"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Hero Description"
+                  }
+                },
+                {
+                  "userEnteredValue": {
+                    "stringValue": "Delicious pastries from a home bakery in Penang."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

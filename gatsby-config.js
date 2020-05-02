@@ -2,8 +2,6 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-
-
 module.exports = {
   siteMetadata: {
     title: "Mrs. Poh's Home Bakery",
@@ -43,21 +41,6 @@ module.exports = {
           'gatsby-remark-smartypants',
         ],
       },
-    },
-    // Add and modify this plugin config to your `gatsby-config.js`:
-{
-  resolve: "gatsby-source-google-spreadsheet",
-  options: {
-        spreadsheetId: process.env.SPREADSHEET_ID,
-        spreadsheetName: "DataSheet",
-        typePrefix: "GoogleSpreadsheet",
-        // netlify doeesn't handle \n too well
-        //  we give a private key with _ as \n, then replace it here
-        credentials: {
-          client_email: process.env.CLIENT_EMAIL,
-          private_key: process.env.PRIVATE_KEY ? process.env.PRIVATE_KEY.replace(/_/g, '\n') : ''
-        },
-      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
