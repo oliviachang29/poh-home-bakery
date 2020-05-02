@@ -2,6 +2,11 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+console.log('environment variables:')
+console.log(process.env.SPREADSHEET_ID);
+console.log(process.env.CLIENT_EMAIL);
+console.log(process.env.PRIVATE_KEY);
+
 module.exports = {
   siteMetadata: {
     title: "Mrs. Poh's Home Bakery",
