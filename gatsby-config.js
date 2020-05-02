@@ -5,8 +5,7 @@ require("dotenv").config({
 console.log('environment variables:')
 console.log(process.env.SPREADSHEET_ID);
 console.log(process.env.CLIENT_EMAIL);
-const private_key = process.env.PRIVATE_KEY.replace(/_/g, '\n');
-console.log(private_key);
+const private_key = process.env.PRIVATE_KEY ? process.env.PRIVATE_KEY.replace(/_/g, '\n') : '';
 
 module.exports = {
   siteMetadata: {
