@@ -5,7 +5,8 @@ require("dotenv").config({
 console.log('environment variables:')
 console.log(process.env.SPREADSHEET_ID);
 console.log(process.env.CLIENT_EMAIL);
-console.log(process.env.PRIVATE_KEY);
+const private_key = process.env.PRIVATE_KEY.replace(/_/g, '\n');
+console.log(private_key);
 
 module.exports = {
   siteMetadata: {
@@ -80,9 +81,8 @@ module.exports = {
         // and parse it directly:
         credentials: {
           client_email: process.env.CLIENT_EMAIL,
-          private_key: process.env.PRIVATE_KEY,
+          private_key: private_key
         },
-
         // Simple node transformation during node sourcing can be achieved by implementing the following functions
         // - `filterNode`
         // - `mapNode`
