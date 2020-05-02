@@ -10,23 +10,9 @@ import Page from 'templates/page'
 const Template = ({ data, location }) => (
   <div>
     <Layout location={location}>
-      <Meta site={get(data, 'site.meta')} />
         <Page {...this.props} />
       )}
     </Layout>
   </div>
 )
 export default Template
-
-export const pageQuery = graphql`
-  query {
-    site {
-      meta: siteMetadata {
-        title
-        description
-        url: siteUrl
-        adsense
-      }
-    }
-  }
-`

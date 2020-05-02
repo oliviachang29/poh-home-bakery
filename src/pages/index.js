@@ -14,7 +14,6 @@ import Menu from 'components/menu'
 import About from 'components/about'
 
 const Index = ({ data, location }) => {
-  console.log(get(data, 'allGoogleSpreadsheetDataSheetCakes.edges'))
   return (
     <Layout location={location}>
       <Hero text={get(data, 'site.meta.description')}/>
