@@ -91,8 +91,9 @@ class Index extends Component {
   }
 
   render() {
+    console.log(this.props)
     return (
-      <Layout location={location}>
+      <Layout location={this.props.location}>
         <Hero text={this.props.data.site.meta.description}/>
         <Section
           id="order"
