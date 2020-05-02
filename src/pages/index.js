@@ -2,9 +2,9 @@ import { graphql } from 'gatsby'
 import React, { Component } from 'react'
 import classNames from 'classnames'
 
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+// require("dotenv").config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// })
 
 import Meta from 'components/meta'
 import Layout from 'components/layout'
@@ -28,8 +28,8 @@ class Index extends Component {
   }
 
   syncFromGSheets() {
-    var spreadsheet_id = process.env.SPREADSHEET_ID
-    var api_key = process.env.API_KEY
+    var spreadsheet_id = "1Yp8JHrj3wbW-z9dagiqPRG5CI5kXhNrcH0PDt_Yhzbg"
+    var api_key = "AIzaSyAEVj_OGT_ZxrkA_z_5NMlvKpzKdqnWbdQ"
     var includeGridData = "true"
     var fields = "sheets.data.rowData.values.userEnteredValue"
 
