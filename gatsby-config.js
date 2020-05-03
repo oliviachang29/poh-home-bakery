@@ -55,13 +55,8 @@ module.exports = {
         display: 'standalone',
         icons: [
           {
-            src: '/img/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/img/android-chrome-512x512.png',
-            sizes: '512x512',
+            src: '/img/android-chrome-144x144.png',
+            sizes: '144x144',
             type: 'image/png',
           },
         ],

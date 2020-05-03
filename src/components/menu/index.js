@@ -17,7 +17,7 @@ const Menu = ({ title, infoText, items }) => {
     	    </div>
     	  ))}
       </div>
-      {items ? '' : 
+      {items.length > 0 ? '' : 
         <p className={styles.loadingText}>Loading menu...</p>
       }
     </div>

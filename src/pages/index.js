@@ -105,7 +105,7 @@ class Index extends Component {
           title="Cakes"
           id="menu"
           bg="beige"
-          backgroundText="cakes"
+          backgroundText={this.state.cakes.length > 0 ? "cakes" : ''}
           backgroundTextColor="white"
           backgroundTextSize="45vw">
           <Menu
@@ -115,7 +115,7 @@ class Index extends Component {
         <Section
           title="Cookies"
           bg="white"
-          backgroundText="cookies"
+          backgroundText={this.state.cookies.length > 0 ? "cookies" : ''}
           backgroundTextColor="beige"
           backgroundTextSize="33vw">
           <Menu
@@ -125,7 +125,7 @@ class Index extends Component {
         <Section
           title="Muffins"
           bg="beige"
-          backgroundText="muffins"
+          backgroundText={this.state.muffins.length > 0 ? "muffins" : ''}
           backgroundTextColor="white"
           backgroundTextSize="30vw">
           <Menu
